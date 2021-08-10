@@ -39,6 +39,13 @@ class Demo extends Api
      */
     public function test()
     {
+        $info = \think\facade\Db::connect('sqlsrv')
+            ->table('abcattr')
+            ->where('pct_vls',3)
+            ->order('abcattr desc')
+            ->find();
+
+        var_dump($info);die;
         $this->success('返回成功', $this->request->param());
     }
 

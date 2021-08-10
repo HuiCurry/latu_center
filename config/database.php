@@ -57,7 +57,26 @@ return [
             // 字段缓存路径
             'schema_cache_path' => app()->getRuntimePath().'schema'.DIRECTORY_SEPARATOR,
         ],
-
+        'sqlsrv'    =>    [
+            // 数据库类型
+            'type'        => 'sqlsrv',
+            // 服务器地址
+            'hostname'    => '122.5.34.254',
+            // 数据库名
+            'database'    => 'NG9021',
+            // 数据库用户名
+            'username'    => 'test',
+            // 数据库密码
+            'password'    => 'T!2021@',
+            // 数据库连接端口
+            'hostport'    => '61433',
+            // 数据库连接参数
+            'params'      => [],
+            // 数据库编码默认采用utf8
+            'charset'     => 'utf8',
+            // 数据库表前缀
+            'prefix'      => '',
+        ],
         // 更多的数据库配置信息
     ],
 ];
